@@ -1,13 +1,3 @@
-// const sentryConfig = require('./next.config.wizardcopy');
-// console.log(sentryConfig());
-// const nextConfig = {
-//   reactStrictMode: true,
-//   swcMinify: true,
-//   ...sentryConfig
-// };
-
-// module.exports = nextConfig;
-
 // This file sets a custom webpack configuration to use your Next.js app
 // with Sentry.
 // https://nextjs.org/docs/api-reference/next.config.js/introduction
@@ -16,8 +6,7 @@
 const { withSentryConfig } = require('@sentry/nextjs');
 
 const moduleExports = {
-  reactStrictMode: true,
-  swcMinify: true,
+  // Your existing module.exports
   sentry: {
     // Use `hidden-source-map` rather than `source-map` as the Webpack `devtool`
     // for client-side builds. (This will be the default starting in
